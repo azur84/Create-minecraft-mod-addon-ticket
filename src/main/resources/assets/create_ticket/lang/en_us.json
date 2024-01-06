@@ -1,0 +1,12 @@
+{
+  "gui.create_ticket.trainticketterminalgui.button_empty": "",
+  "gui.create_ticket.addtraget.gare_name": "",
+  "block.create_ticket.trainticketterminalhitbox": "Trainticketterminalhitbox",
+  "block.create__train_ticket_addon.trainticketterminalhitbox": "Trainticketterminalhitbox",
+  "block.create__train_ticket_addon.trainticketterminal": "Train ticket terminal",
+  "gui.create_ticket.addtraget.second_gare_name": "",
+  "gui.create_ticket.trainticketterminalgui.label_test": "test",
+  "item.create_ticket.ticket": "Ticket",
+  "block.create_ticket.trainticketterminal": "Train ticket terminal",
+  "itemGroup.tabcreate_ticket": "Create Ticket"
+}

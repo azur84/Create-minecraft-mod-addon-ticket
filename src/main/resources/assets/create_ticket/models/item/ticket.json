@@ -1,0 +1,104 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "create_ticket:items/ticket"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 0
+      },
+      "model": "create_ticket:item/ticket_0"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 1
+      },
+      "model": "create_ticket:item/ticket_1"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 2
+      },
+      "model": "create_ticket:item/ticket_2"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 3
+      },
+      "model": "create_ticket:item/ticket_3"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 4
+      },
+      "model": "create_ticket:item/ticket_4"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 5
+      },
+      "model": "create_ticket:item/ticket_5"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 6
+      },
+      "model": "create_ticket:item/ticket_6"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 7
+      },
+      "model": "create_ticket:item/ticket_7"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 8
+      },
+      "model": "create_ticket:item/ticket_8"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 9
+      },
+      "model": "create_ticket:item/ticket_9"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 10
+      },
+      "model": "create_ticket:item/ticket_10"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 11
+      },
+      "model": "create_ticket:item/ticket_11"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 12
+      },
+      "model": "create_ticket:item/ticket_12"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 13
+      },
+      "model": "create_ticket:item/ticket_13"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 14
+      },
+      "model": "create_ticket:item/ticket_14"
+    },
+    {
+      "predicate": {
+        "create_ticket:ticket_color": 15
+      },
+      "model": "create_ticket:item/ticket_15"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_ticket:blocks/no_texture",
+    "up": "create_ticket:blocks/no_texture",
+    "north": "create_ticket:blocks/no_texture",
+    "east": "create_ticket:blocks/no_texture",
+    "south": "create_ticket:blocks/no_texture",
+    "west": "create_ticket:blocks/no_texture",
+    "particle": "create:block/railway_casing"
+  }
+}

@@ -1,0 +1,478 @@
+{
+  "mod_elements": [
+    {
+      "name": "Trainticketterminal",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminal",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/block/entity/TrainticketterminalBlockEntity.java",
+          "src/main/resources/assets/create_ticket/models/item/trainticketterminal.json",
+          "src/main/resources/assets/create_ticket/blockstates/trainticketterminal.json",
+          "src/main/resources/assets/create_ticket/models/block/trainticketterminal.json",
+          "src/main/java/fr/azur/createtrainticketaddon/block/TrainticketterminalBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "TrainticketterminalhitboxPlacement",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminalhitbox_placement",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalhitboxPlacementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trainticketterminalhitbox",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "trainticketterminalhitbox",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_ticket/models/block/trainticketterminalhitbox.json",
+          "src/main/resources/assets/create_ticket/models/item/trainticketterminalhitbox.json",
+          "src/main/java/fr/azur/createtrainticketaddon/block/TrainticketterminalhitboxBlock.java",
+          "src/main/resources/assets/create_ticket/blockstates/trainticketterminalhitbox.json"
+        ]
+      }
+    },
+    {
+      "name": "TrainticketterminalhitboxTick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminalhitbox_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalhitboxTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trainticketterminaladd",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminaladd",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminaladdProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrainticketterminalhitboxDestroy",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminalhitbox_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalhitboxDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrainticketterminalConditionDePlacementValideDeBloc",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminal_condition_de_placement_valide_de_bloc",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalConditionDePlacementValideDeBlocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrainticketterminalhitboxLorsDunClicDroitSurLeBloc",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminalhitbox_lors_dun_clic_droit_sur_le_bloc",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalhitboxLorsDunClicDroitSurLeBlocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trainticketterminalgui",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminalgui",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/world/inventory/TrainticketterminalguiMenu.java",
+          "src/main/java/fr/azur/createtrainticketaddon/client/gui/TrainticketterminalguiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "TicketFournisseurDeLaValeurDeLaPropriete",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_fournisseur_de_la_valeur_de_la_propriete",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TicketFournisseurDeLaValeurDeLaProprieteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ticket",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_ticket/models/item/ticket_5.json",
+          "src/main/java/fr/azur/createtrainticketaddon/item/TicketItem.java",
+          "src/main/resources/assets/create_ticket/models/item/ticket_2.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_12.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_8.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_1.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_3.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_9.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_6.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_15.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_10.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_7.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_0.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_13.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_4.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_11.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_14.json"
+        ]
+      }
+    },
+    {
+      "name": "CreateTicket",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_ticket",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Addtraget",
+      "type": "gui",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "addtraget",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/network/AddtragetButtonMessage.java",
+          "src/main/java/fr/azur/createtrainticketaddon/client/gui/AddtragetScreen.java",
+          "src/main/java/fr/azur/createtrainticketaddon/world/inventory/AddtragetMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Addtragetbuttonaddvisibility",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "addtragetbuttonaddvisibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/AddtragetbuttonaddvisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Addtragetbutton",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "addtragetbutton",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/AddtragetbuttonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrainticketterminalQuandLeBlocEstPlace",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminal_quand_le_bloc_est_place",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalQuandLeBlocEstPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ownerrules",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ownerrules",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/OwnerrulesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "terminal_edit",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.create_ticket.trainticketterminalgui.button_empty": "",
+      "gui.create_ticket.addtraget.gare_name": "",
+      "block.create_ticket.trainticketterminalhitbox": "Trainticketterminalhitbox",
+      "block.create__train_ticket_addon.trainticketterminalhitbox": "Trainticketterminalhitbox",
+      "block.create__train_ticket_addon.trainticketterminal": "Train ticket terminal",
+      "gui.create_ticket.addtraget.second_gare_name": "",
+      "gui.create_ticket.trainticketterminalgui.label_test": "test",
+      "item.create_ticket.ticket": "Ticket",
+      "block.create_ticket.trainticketterminal": "Train ticket terminal",
+      "itemGroup.tabcreate_ticket": "Create Ticket"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "create_ticket",
+    "modName": "create train ticket",
+    "version": "0.1.0",
+    "author": "Azur84",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [
+      "create"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "allmods"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Make with mcreator",
+    "modElementsPackage": "fr.azur.createtrainticketaddon",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

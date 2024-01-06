@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "railway_casing",
+        "1": "railway_casing_connected",
+        "2": "train_ticket_terminal_screen",
+        "3": "train_ticket_terminal_signs",
+        "4": "train_ticket_terminal_printer"
+      },
+      "name": "default"
+    }
+  }
+}

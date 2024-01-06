@@ -1,0 +1,132 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "gare_name",
+          "width": 120,
+          "height": 20,
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "second_gare_name",
+          "width": 120,
+          "height": 20,
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_no_texture",
+          "image": "no_texture.png",
+          "hoveredImage": "overlay.png",
+          "onClick": {
+            "name": "Addtragetbutton"
+          },
+          "displayCondition": {
+            "name": "Addtragetbuttonaddvisibility"
+          },
+          "x": 277,
+          "y": 99
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "add_bouton.png",
+          "use1Xscale": false,
+          "x": 276,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "from.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "to.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 73
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 258,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 276,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cost.png",
+          "use1Xscale": false,
+          "x": 267,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

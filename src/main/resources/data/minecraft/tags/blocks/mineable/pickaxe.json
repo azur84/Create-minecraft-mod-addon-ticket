@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_ticket:trainticketterminalhitbox",
+    "create_ticket:trainticketterminal"
+  ]
+}

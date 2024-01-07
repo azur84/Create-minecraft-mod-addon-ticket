@@ -2,11 +2,11 @@
   "_fv": 47,
   "_type": "gui",
   "definition": {
-    "type": 0,
+    "type": 1,
     "width": 176,
     "height": 166,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "inventoryOffsetY": 150,
     "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
@@ -34,15 +34,421 @@
         "data": {
           "name": "imagebutton_setting",
           "image": "setting.png",
-          "hoveredImage": "",
+          "hoveredImage": "setting_overlay.png",
           "x": 98,
+          "y": 210
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Visibleslot1"
+          },
+          "x": 105,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Visibleslot2"
+          },
+          "x": 105,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Visibleslot3"
+          },
+          "x": 105,
+          "y": 108
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Visibleslot4"
+          },
+          "x": 105,
+          "y": 149
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 262,
+          "y": 45
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 45
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 262,
+          "y": 86
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 86
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 262,
+          "y": 126
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 126
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 262,
+          "y": 167
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 280,
+          "y": 167
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add_shopping_cart",
+          "image": "add_shopping_cart.png",
+          "hoveredImage": "add_shopping_cart_overlay.png",
+          "displayCondition": {
+            "name": "Visibleslot1"
+          },
+          "x": 262,
+          "y": 29
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add_shopping_cart1",
+          "image": "add_shopping_cart.png",
+          "hoveredImage": "add_shopping_cart_overlay.png",
+          "displayCondition": {
+            "name": "Visibleslot2"
+          },
+          "x": 262,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add_shopping_cart2",
+          "image": "add_shopping_cart.png",
+          "hoveredImage": "add_shopping_cart_overlay.png",
+          "displayCondition": {
+            "name": "Visibleslot3"
+          },
+          "x": 262,
+          "y": 111
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_add_shopping_cart3",
+          "image": "add_shopping_cart.png",
+          "hoveredImage": "add_shopping_cart_overlay.png",
+          "displayCondition": {
+            "name": "Visibleslot4"
+          },
+          "x": 262,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "from 1",
+            "name": "Form1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 32
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "to 1",
+            "name": "To1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty2",
+          "text": {
+            "fixedValue": "form 2",
+            "name": "From2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty3",
+          "text": {
+            "fixedValue": "to 2",
+            "name": "To2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty4",
+          "text": {
+            "fixedValue": "form 3",
+            "name": "From3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_3",
+          "text": {
+            "fixedValue": "to 3",
+            "name": "To3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_form_4",
+          "text": {
+            "fixedValue": "form 4",
+            "name": "From4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_4",
+          "text": {
+            "fixedValue": "to 4",
+            "name": "To4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 172
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "search",
+          "width": 120,
+          "height": 20,
+          "x": 122,
+          "y": 209
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_down",
+          "image": "down.png",
+          "hoveredImage": "down_overlay.png",
+          "x": 244,
+          "y": 210
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_up",
+          "image": "up.png",
+          "hoveredImage": "up_overlay.png",
+          "x": 265,
           "y": 210
         }
       }
     ],
+    "onTick": {
+      "name": "Trainticketterminalguitick"
+    },
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
+      "sx": 9,
+      "sy": 9,
       "ox": 11,
       "oy": 15,
       "snapOnGrid": false

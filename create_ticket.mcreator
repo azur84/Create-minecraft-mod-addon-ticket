@@ -5,7 +5,7 @@
       "type": "block",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "trainticketterminal",
       "metadata": {
         "files": [
@@ -422,6 +422,298 @@
           }
         ]
       }
+    },
+    {
+      "name": "Trainticketterminalguitick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminalguitick",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalguitickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "Form1",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "from_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/Form1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "To1",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/To1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "From2",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "from_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/From2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "To2",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/To2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "From3",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "from_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/From3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "To3",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/To3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "From4",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "from_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/From4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "To4",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/To4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "Visibleslot1",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibleslot_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/Visibleslot1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "Visibleslot2",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibleslot_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/Visibleslot2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "Visibleslot3",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibleslot_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/Visibleslot3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "Visibleslot4",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibleslot_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/Visibleslot4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
     }
   ],
   "variable_elements": [
@@ -429,32 +721,70 @@
       "name": "terminal_edit",
       "type": "string",
       "scope": "player_persistent",
-      "value": ""
+      "value": "\"\""
+    },
+    {
+      "name": "terminal_search",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "terminal_traget_list",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "terminal_page",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "terminal_visible_list",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "gui.create_ticket.trainticketterminalgui.button_empty": "",
-      "gui.create_ticket.addtraget.gare_name": "",
       "block.create_ticket.trainticketterminalhitbox": "Trainticketterminalhitbox",
-      "block.create__train_ticket_addon.trainticketterminalhitbox": "Trainticketterminalhitbox",
-      "block.create__train_ticket_addon.trainticketterminal": "Train ticket terminal",
-      "gui.create_ticket.addtraget.second_gare_name": "",
+      "gui.create_ticket.trainticketterminalgui.search": "",
+      "gui.create_ticket.trainticketterminalgui.label_to_3": "to 3",
+      "gui.create_ticket.trainticketterminalgui.label_to_4": "to 4",
+      "gui.create_ticket.trainticketterminalgui.label_empty": "form 1",
       "gui.create_ticket.trainticketterminalgui.label_test": "test",
       "item.create_ticket.ticket": "Ticket",
+      "gui.create_ticket.trainticketterminalgui.button_empty": "",
+      "gui.create_ticket.addtraget.gare_name": "",
+      "gui.create_ticket.trainticketterminalgui.label_form_4": "form 4",
+      "gui.create_ticket.trainticketterminalgui.label_empty2": "form 2",
+      "block.create__train_ticket_addon.trainticketterminalhitbox": "Trainticketterminalhitbox",
+      "gui.create_ticket.trainticketterminalgui.label_empty1": "to 1",
+      "block.create__train_ticket_addon.trainticketterminal": "Train ticket terminal",
+      "gui.create_ticket.trainticketterminalgui.label_empty4": "form 3",
+      "gui.create_ticket.trainticketterminalgui.label_empty3": "to 2",
+      "gui.create_ticket.addtraget.second_gare_name": "",
       "block.create_ticket.trainticketterminal": "Train ticket terminal",
       "itemGroup.tabcreate_ticket": "Create Ticket"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "trainticketterminalgui code",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "create_ticket",
     "modName": "create train ticket",
-    "version": "0.1.0",
+    "version": "0.1.1-dev",
     "author": "Azur84",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",

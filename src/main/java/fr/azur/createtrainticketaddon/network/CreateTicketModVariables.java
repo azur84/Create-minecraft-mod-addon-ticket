@@ -67,6 +67,10 @@ public class CreateTicketModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.terminal_edit = original.terminal_edit;
+			clone.terminal_search = original.terminal_search;
+			clone.terminal_traget_list = original.terminal_traget_list;
+			clone.terminal_page = original.terminal_page;
+			clone.terminal_visible_list = original.terminal_visible_list;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -103,7 +107,11 @@ public class CreateTicketModVariables {
 	}
 
 	public static class PlayerVariables {
-		public String terminal_edit = "";
+		public String terminal_edit = "\"\"";
+		public String terminal_search = "\"\"";
+		public String terminal_traget_list = "\"\"";
+		public double terminal_page = 0;
+		public String terminal_visible_list = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +121,20 @@ public class CreateTicketModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("terminal_edit", terminal_edit);
+			nbt.putString("terminal_search", terminal_search);
+			nbt.putString("terminal_traget_list", terminal_traget_list);
+			nbt.putDouble("terminal_page", terminal_page);
+			nbt.putString("terminal_visible_list", terminal_visible_list);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			terminal_edit = nbt.getString("terminal_edit");
+			terminal_search = nbt.getString("terminal_search");
+			terminal_traget_list = nbt.getString("terminal_traget_list");
+			terminal_page = nbt.getDouble("terminal_page");
+			terminal_visible_list = nbt.getString("terminal_visible_list");
 		}
 	}
 
@@ -144,6 +160,10 @@ public class CreateTicketModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.terminal_edit = message.data.terminal_edit;
+					variables.terminal_search = message.data.terminal_search;
+					variables.terminal_traget_list = message.data.terminal_traget_list;
+					variables.terminal_page = message.data.terminal_page;
+					variables.terminal_visible_list = message.data.terminal_visible_list;
 				}
 			});
 			context.setPacketHandled(true);

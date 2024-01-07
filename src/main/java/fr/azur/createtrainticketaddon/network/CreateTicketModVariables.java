@@ -71,6 +71,7 @@ public class CreateTicketModVariables {
 			clone.terminal_traget_list = original.terminal_traget_list;
 			clone.terminal_page = original.terminal_page;
 			clone.terminal_visible_list = original.terminal_visible_list;
+			clone.terminal_max_page = original.terminal_max_page;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -112,6 +113,7 @@ public class CreateTicketModVariables {
 		public String terminal_traget_list = "\"\"";
 		public double terminal_page = 0;
 		public String terminal_visible_list = "\"\"";
+		public double terminal_max_page = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -125,6 +127,7 @@ public class CreateTicketModVariables {
 			nbt.putString("terminal_traget_list", terminal_traget_list);
 			nbt.putDouble("terminal_page", terminal_page);
 			nbt.putString("terminal_visible_list", terminal_visible_list);
+			nbt.putDouble("terminal_max_page", terminal_max_page);
 			return nbt;
 		}
 
@@ -135,6 +138,7 @@ public class CreateTicketModVariables {
 			terminal_traget_list = nbt.getString("terminal_traget_list");
 			terminal_page = nbt.getDouble("terminal_page");
 			terminal_visible_list = nbt.getString("terminal_visible_list");
+			terminal_max_page = nbt.getDouble("terminal_max_page");
 		}
 	}
 
@@ -164,6 +168,7 @@ public class CreateTicketModVariables {
 					variables.terminal_traget_list = message.data.terminal_traget_list;
 					variables.terminal_page = message.data.terminal_page;
 					variables.terminal_visible_list = message.data.terminal_visible_list;
+					variables.terminal_max_page = message.data.terminal_max_page;
 				}
 			});
 			context.setPacketHandled(true);

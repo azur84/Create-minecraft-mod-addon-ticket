@@ -271,7 +271,7 @@
     "name": "Ticket",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "TRANSPORTATION"
+      "value": "CUSTOM:CreateTicket"
     },
     "stackSize": 64,
     "enchantability": 0,

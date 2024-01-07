@@ -292,6 +292,7 @@
     {
       "name": "CreateTicket",
       "type": "tab",
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "create_ticket",
@@ -714,6 +715,46 @@
         ]
       },
       "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "Visibleup",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibleup",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/VisibleupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Visibledown",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visibledown",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/VisibledownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -746,6 +787,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "terminal_max_page",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],

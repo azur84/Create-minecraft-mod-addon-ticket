@@ -2,9 +2,9 @@
   "parent": "create_ticket:custom/train_ticket_terminal",
   "textures": {
     "all": "create_ticket:blocks/train_ticket_terminal_signs",
-    "particle": "create_ticket:blocks/railway_casing",
-    "0": "create_ticket:blocks/create:railway_casing",
-    "1": "create_ticket:blocks/create:railway_casing_connected",
+    "particle": "create:block/railway_casing",
+    "0": "create:block/railway_casing",
+    "1": "create:block/railway_casing_connected",
     "2": "create_ticket:blocks/train_ticket_terminal_screen",
     "3": "create_ticket:blocks/train_ticket_terminal_signs",
     "4": "create_ticket:blocks/train_ticket_terminal_printer"

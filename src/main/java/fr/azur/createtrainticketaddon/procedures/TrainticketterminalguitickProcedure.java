@@ -35,13 +35,6 @@ public class TrainticketterminalguitickProcedure {
 		com.google.gson.JsonObject currentitem = new com.google.gson.JsonObject();
 		if (!(guistate.containsKey("text:search") ? ((EditBox) guistate.get("text:search")).getValue() : "")
 				.equals((entity.getCapability(CreateTicketModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreateTicketModVariables.PlayerVariables())).terminal_search)) {
-			{
-				String _setval = guistate.containsKey("text:search") ? ((EditBox) guistate.get("text:search")).getValue() : "";
-				entity.getCapability(CreateTicketModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.terminal_edit = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 			search = guistate.containsKey("text:search") ? ((EditBox) guistate.get("text:search")).getValue() : "";
 			{
 				double _setval = 0;

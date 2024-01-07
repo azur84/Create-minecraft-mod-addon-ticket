@@ -23,7 +23,6 @@ public class Visibleslot3Procedure {
 				}
 			}
 		}.parse(((entity.getCapability(CreateTicketModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CreateTicketModVariables.PlayerVariables())).terminal_visible_list));
-		json = json.get("0").getAsJsonObject();
-		return !(json.size() == 2);
+		return !(json.size() == 3);
 	}
 }

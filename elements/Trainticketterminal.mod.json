@@ -166,7 +166,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "TRANSPORTATION"
+      "value": "CUSTOM:CreateTicket"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

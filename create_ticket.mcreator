@@ -9,11 +9,11 @@
       "registry_name": "trainticketterminal",
       "metadata": {
         "files": [
-          "src/main/java/fr/azur/createtrainticketaddon/block/entity/TrainticketterminalBlockEntity.java",
-          "src/main/resources/assets/create_ticket/models/item/trainticketterminal.json",
-          "src/main/resources/assets/create_ticket/blockstates/trainticketterminal.json",
           "src/main/resources/assets/create_ticket/models/block/trainticketterminal.json",
-          "src/main/java/fr/azur/createtrainticketaddon/block/TrainticketterminalBlock.java"
+          "src/main/resources/assets/create_ticket/models/item/trainticketterminal.json",
+          "src/main/java/fr/azur/createtrainticketaddon/block/TrainticketterminalBlock.java",
+          "src/main/java/fr/azur/createtrainticketaddon/block/entity/TrainticketterminalBlockEntity.java",
+          "src/main/resources/assets/create_ticket/blockstates/trainticketterminal.json"
         ]
       }
     },
@@ -58,9 +58,9 @@
       "registry_name": "trainticketterminalhitbox",
       "metadata": {
         "files": [
-          "src/main/resources/assets/create_ticket/models/block/trainticketterminalhitbox.json",
-          "src/main/resources/assets/create_ticket/models/item/trainticketterminalhitbox.json",
           "src/main/java/fr/azur/createtrainticketaddon/block/TrainticketterminalhitboxBlock.java",
+          "src/main/resources/assets/create_ticket/models/item/trainticketterminalhitbox.json",
+          "src/main/resources/assets/create_ticket/models/block/trainticketterminalhitbox.json",
           "src/main/resources/assets/create_ticket/blockstates/trainticketterminalhitbox.json"
         ]
       }
@@ -234,8 +234,8 @@
       "registry_name": "trainticketterminalgui",
       "metadata": {
         "files": [
-          "src/main/java/fr/azur/createtrainticketaddon/world/inventory/TrainticketterminalguiMenu.java",
-          "src/main/java/fr/azur/createtrainticketaddon/client/gui/TrainticketterminalguiScreen.java"
+          "src/main/java/fr/azur/createtrainticketaddon/client/gui/TrainticketterminalguiScreen.java",
+          "src/main/java/fr/azur/createtrainticketaddon/world/inventory/TrainticketterminalguiMenu.java"
         ]
       }
     },
@@ -268,24 +268,24 @@
       "registry_name": "ticket",
       "metadata": {
         "files": [
-          "src/main/resources/assets/create_ticket/models/item/ticket_5.json",
-          "src/main/java/fr/azur/createtrainticketaddon/item/TicketItem.java",
-          "src/main/resources/assets/create_ticket/models/item/ticket_2.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_12.json",
           "src/main/resources/assets/create_ticket/models/item/ticket_8.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_1.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_3.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_9.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_13.json",
+          "src/main/java/fr/azur/createtrainticketaddon/item/TicketItem.java",
+          "src/main/resources/assets/create_ticket/models/item/ticket.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_2.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_11.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_7.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_14.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_5.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_0.json",
           "src/main/resources/assets/create_ticket/models/item/ticket_6.json",
           "src/main/resources/assets/create_ticket/models/item/ticket_15.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_10.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_7.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_0.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_13.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_3.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_12.json",
           "src/main/resources/assets/create_ticket/models/item/ticket_4.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_11.json",
-          "src/main/resources/assets/create_ticket/models/item/ticket_14.json"
+          "src/main/resources/assets/create_ticket/models/item/ticket_1.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_10.json",
+          "src/main/resources/assets/create_ticket/models/item/ticket_9.json"
         ]
       }
     },
@@ -420,6 +420,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -432,9 +448,6 @@
       "locked_code": false,
       "registry_name": "trainticketterminalguitick",
       "metadata": {
-        "files": [
-          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalguitickProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -755,6 +768,78 @@
           }
         ]
       }
+    },
+    {
+      "name": "Ownerterminalbuton",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ownerterminalbuton",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/OwnerterminalbutonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Buttonsettingterminal",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buttonsettingterminal",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/ButtonsettingterminalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/trainticketterminalgui code"
     }
   ],
   "variable_elements": [

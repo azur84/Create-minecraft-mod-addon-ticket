@@ -230,9 +230,9 @@
     },
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "Trainticketterminalgui",
+    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": true,
-    "inventorySize": 0,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -246,6 +246,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TrainticketterminalLorsDunClicDroitSurLeBloc"
+    },
     "onBlockAdded": {
       "name": "Trainticketterminaladd"
     },

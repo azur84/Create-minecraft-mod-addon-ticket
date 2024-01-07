@@ -23,6 +23,7 @@ import fr.azur.createtrainticketaddon.procedures.To4Procedure;
 import fr.azur.createtrainticketaddon.procedures.To3Procedure;
 import fr.azur.createtrainticketaddon.procedures.To2Procedure;
 import fr.azur.createtrainticketaddon.procedures.To1Procedure;
+import fr.azur.createtrainticketaddon.procedures.OwnerterminalbutonProcedure;
 import fr.azur.createtrainticketaddon.procedures.From4Procedure;
 import fr.azur.createtrainticketaddon.procedures.From3Procedure;
 import fr.azur.createtrainticketaddon.procedures.From2Procedure;
@@ -157,7 +158,13 @@ public class TrainticketterminalguiScreen extends AbstractContainerScreen<Traint
 		guistate.put("button:imagebutton_no_texture", imagebutton_no_texture);
 		this.addRenderableWidget(imagebutton_no_texture);
 		imagebutton_setting = new ImageButton(this.leftPos + -27, this.topPos + 173, 18, 18, 0, 0, 18, new ResourceLocation("create_ticket:textures/screens/atlas/imagebutton_setting.png"), 18, 36, e -> {
-		});
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (OwnerterminalbutonProcedure.execute(world, x, y, z, entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		};
 		guistate.put("button:imagebutton_setting", imagebutton_setting);
 		this.addRenderableWidget(imagebutton_setting);
 		imagebutton_add_shopping_cart = new ImageButton(this.leftPos + 136, this.topPos + -8, 36, 16, 0, 0, 16, new ResourceLocation("create_ticket:textures/screens/atlas/imagebutton_add_shopping_cart.png"), 36, 32, e -> {

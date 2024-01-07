@@ -448,6 +448,9 @@
       "locked_code": false,
       "registry_name": "trainticketterminalguitick",
       "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalguitickProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -840,6 +843,41 @@
         ]
       },
       "path": "~/trainticketterminalgui code"
+    },
+    {
+      "name": "TrainticketterminalLorsDunClicDroitSurLeBloc",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trainticketterminal_lors_dun_clic_droit_sur_le_bloc",
+      "metadata": {
+        "files": [
+          "src/main/java/fr/azur/createtrainticketaddon/procedures/TrainticketterminalLorsDunClicDroitSurLeBlocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

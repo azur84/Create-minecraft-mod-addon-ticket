@@ -35,6 +35,9 @@
           "name": "imagebutton_setting",
           "image": "setting.png",
           "hoveredImage": "setting_overlay.png",
+          "displayCondition": {
+            "name": "Ownerterminalbuton"
+          },
           "x": 98,
           "y": 210
         }
